@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync-images": "python scripts/sync_service_images.py"
   },
   "dependencies": {
     "lucide-react": "^1.23.0",

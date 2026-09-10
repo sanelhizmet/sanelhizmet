@@ -151,7 +151,7 @@ export function buildServiceJsonLd(service: Service) {
   const seo = getServiceSeo(
     service.slug,
     service.title,
-    service.description.split("\n\n")[0]
+    service.shortDescription
   );
   return {
     "@context": "https://schema.org",

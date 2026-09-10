@@ -35,7 +35,7 @@ export async function generateMetadata({
   const seo = getServiceSeo(
     service.slug,
     service.title,
-    service.description.split("\n\n")[0]
+    service.shortDescription
   );
 
   return {
@@ -80,17 +80,17 @@ export default async function ServicePage({ params }: PageProps) {
       />
       <Navbar />
       <main className="flex-1 pt-20">
-        <section className="relative min-h-[40vh] overflow-hidden">
+        <section className="relative min-h-[40vh] overflow-hidden md:min-h-[48vh]">
           <Image
             src={pageHeroImage}
             alt={service.title}
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/55" />
-          <div className="relative z-10 mx-auto flex min-h-[40vh] max-w-6xl flex-col justify-end px-4 py-12 md:px-6">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20" />
+          <div className="relative z-10 mx-auto flex min-h-[40vh] max-w-6xl flex-col justify-end px-4 py-12 md:min-h-[48vh] md:px-6">
             <Link
               href="/#hizmetler"
               className="mb-4 inline-flex w-fit items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
@@ -109,16 +109,18 @@ export default async function ServicePage({ params }: PageProps) {
 
         <section className="bg-background py-14 md:py-20">
           <div className="mx-auto max-w-3xl px-4 md:px-6">
-            <div className="mb-10 space-y-4">
-              {service.description.split("\n\n").map((paragraph) => (
-                <p
-                  key={paragraph}
-                  className="text-lg leading-relaxed text-muted"
-                >
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+            {service.description.trim() && (
+              <div className="mb-10 space-y-4">
+                {service.description.split("\n\n").map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className="text-lg leading-relaxed text-muted"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )}
 
             {/* Yazının altında vitrin / ürün slaytı */}
             {service.topImages.length > 0 && (
@@ -182,14 +184,11 @@ export default async function ServicePage({ params }: PageProps) {
 
             {service.beforeAfterImages.length > 0 && (
               <div className="mb-14">
-                <h2 className="mb-5 text-2xl font-bold text-foreground">
-                  Öncesi / Sonrası
-                </h2>
                 <ImageSlider
                   images={service.beforeAfterImages}
                   visible={1}
                   autoPlayMs={4500}
-                  altPrefix={`${service.title} öncesi sonrası`}
+                  altPrefix={service.title}
                   imageClassName="mx-auto aspect-[3/4] w-full max-w-md bg-[#f4f4f5] md:aspect-[4/5] md:max-w-xl"
                   roundedClassName="rounded-2xl"
                   objectFit="contain"
@@ -199,7 +198,7 @@ export default async function ServicePage({ params }: PageProps) {
 
             <div className="mb-14">
               <h2 className="mb-5 text-2xl font-bold text-foreground">
-                Sık sorulanlar
+                Sıkça Sorulan Sorular
               </h2>
               <div className="space-y-5">
                 {service.faqs.map((faq) => (

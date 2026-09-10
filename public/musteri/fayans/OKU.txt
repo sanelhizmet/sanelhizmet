@@ -1,0 +1,7 @@
+Bu klasör: Fayans / Seramik
+
+kategori.webp     → ana sayfa kartı + sayfa üst görseli
+ust-slayt/        → yazı altı slayt
+oncesi-sonrasi/   → alt slayt (öncesi/sonrası)
+
+Görsel ekledikten sonra: npm run sync-images

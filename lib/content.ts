@@ -1,17 +1,17 @@
 import {
-  dusakabinAlt,
-  dusakabinVitrin,
-  fayansAlt,
-  fayansUst,
+  dusakabinOncesiSonrasi,
+  dusakabinUstSlayt,
+  fayansOncesiSonrasi,
+  fayansUstSlayt,
   heroSliderImages,
-  klozetAlt,
-  klozetUst,
-  muslukAlt,
-  muslukUst,
-  mutfakAlt,
-  mutfakUst,
-  tesisatAlt,
-  tesisatUst,
+  klozetOncesiSonrasi,
+  klozetUstSlayt,
+  muslukOncesiSonrasi,
+  muslukUstSlayt,
+  mutfakOncesiSonrasi,
+  mutfakUstSlayt,
+  tesisatOncesiSonrasi,
+  tesisatUstSlayt,
 } from "@/lib/musteri-images";
 
 export const siteConfig = {
@@ -40,7 +40,7 @@ export const googleBusiness = {
 };
 
 export const navLinks = [
-  { label: "Tanıtım", href: "/#tanitim" },
+  { label: "Ana Sayfa", href: "/#tanitim" },
   { label: "Hizmetler", href: "/#hizmetler" },
   { label: "Yorumlar", href: "/#yorumlar" },
   { label: "Hakkımızda", href: "/#hakkimizda" },
@@ -67,9 +67,9 @@ export type Service = {
   features: string[];
   steps: ServiceStep[];
   faqs: ServiceFaq[];
-  /** Yazı altı vitrin / ürün slaytı */
+  /** Yazı altı slayt → public/musteri/<hizmet>/ust-slayt/ */
   topImages: string[];
-  /** Alt slayt (öncesi / sonrası / uygulama) */
+  /** Alt slayt → public/musteri/<hizmet>/oncesi-sonrasi/ */
   beforeAfterImages: string[];
 };
 
@@ -78,8 +78,7 @@ export const services: Service[] = [
     slug: "dusakabin",
     title: "Duşakabin Tamir ve Yenileme",
     shortDescription: "Duşakabin montajı, tamiratı ve yenileme",
-    description:
-      "Duşakabin işlerimiz itina ile yapılır. Eski duşakabinlerinizin sökümünden, tamiratına ve montajına kadar tüm işlemler titizlikle yapılır.",
+    description: "",
     image: "/musteri/dusakabin/kategori.webp",
     features: [
       "Müşteri isteğine göre ölçü, renk ve tasarımına göre duşakabini seçiyoruz",
@@ -131,15 +130,14 @@ export const services: Service[] = [
           "Fiyat, kullanılacak malzemeye ve işçiliğe göre keşif sonrası netleşir; sabit paket fiyatı yoktur.",
       },
     ],
-    topImages: dusakabinVitrin,
-    beforeAfterImages: dusakabinAlt,
+    topImages: [...dusakabinUstSlayt],
+    beforeAfterImages: [...dusakabinOncesiSonrasi],
   },
   {
     slug: "sihhi-tesisat",
     title: "Sıhhi Tesisat",
     shortDescription: "Su tesisatı montaj ve tamiri",
-    description:
-      "Temiz ve atık su tesisatlarınızın tamiri yapılır. Yeni tesisat işlemleri titizlikle yürütülür.",
+    description: "",
     image: "/musteri/tesisat/kategori.webp",
     features: [
       "Yeni mutfak tesisat hattı çekme ve yenileme",
@@ -189,15 +187,14 @@ export const services: Service[] = [
           "Fiyat, işin durumuna, kullanılacak malzemeye ve işçiliğe göre yerinde tespit sonrası verilir.",
       },
     ],
-    topImages: tesisatUst,
-    beforeAfterImages: tesisatAlt,
+    topImages: [...tesisatUstSlayt],
+    beforeAfterImages: [...tesisatOncesiSonrasi],
   },
   {
     slug: "rezervuar-klozet",
     title: "Klozet ve Rezervuar Tamir ve Montajı",
     shortDescription: "Klozet, rezervuar ve sifon montajı / tamiri",
-    description:
-      "Klozet ve sifonlarınızın tamiri ve montajı özenle yapılır.",
+    description: "",
     image: "/musteri/klozet/kategori.webp",
     features: [
       "Klozet montajı yapılır",
@@ -252,15 +249,14 @@ export const services: Service[] = [
           "Fiyat, kullanılacak malzemeye ve işçiliğe göre teklif edilir; malzemeli veya sadece işçilik seçenekleri sunulabilir.",
       },
     ],
-    topImages: klozetUst,
-    beforeAfterImages: klozetAlt,
+    topImages: [...klozetUstSlayt],
+    beforeAfterImages: [...klozetOncesiSonrasi],
   },
   {
     slug: "musluk-batarya",
     title: "Musluk ve Batarya Montajı ve Tamiri",
     shortDescription: "Musluk ve batarya montajı, değişimi ve tamiri",
-    description:
-      "Banyo, mutfak, duş bataryası ve duş seti montajı, değişimi ve tamiri yapılır.",
+    description: "",
     image: "/musteri/musluk/kategori.webp",
     features: [
       "Banyo lavabo bataryası değişimi, montajı ve tamiri",
@@ -313,15 +309,14 @@ export const services: Service[] = [
           "Fiyat, kullanılacak malzemeye ve işçiliğe göre netleşir; malzemeli veya sadece işçilik teklifi hazırlanabilir.",
       },
     ],
-    topImages: muslukAlt,
-    beforeAfterImages: muslukUst,
+    topImages: [...muslukUstSlayt],
+    beforeAfterImages: [...muslukOncesiSonrasi],
   },
   {
     slug: "fayans",
     title: "Fayans ve Seramik Tamiri ve Yenileme",
     shortDescription: "Fayans / seramik tadilatı, yenileme ve döşeme",
-    description:
-      "Tüm fayans ve seramik işleri; tadilatı, yenilemesi ve döşemesi itina ile yapılır.",
+    description: "",
     image: "/musteri/fayans/kategori.webp",
     features: [
       "Banyo tadilatı fayansı",
@@ -376,15 +371,14 @@ export const services: Service[] = [
           "Fiyat, kullanılacak malzemeye, metraj / işin kapsamına ve işçiliğe göre keşif sonrası netleşir.",
       },
     ],
-    topImages: fayansUst,
-    beforeAfterImages: fayansAlt,
+    topImages: [...fayansUstSlayt],
+    beforeAfterImages: [...fayansOncesiSonrasi],
   },
   {
     slug: "mutfak",
     title: "Dolap Kurulum ve Tamiri",
     shortDescription: "Tüm dolap işleri — kurulum ve tamir",
-    description:
-      "Tüm dolap kurulumlarınız özenle yapılır.",
+    description: "",
     image: "/musteri/mutfak/kategori.webp",
     features: [
       "Banyo, mutfak, çalışma masası, kiler, ayakkabılık, vestiyer ve kahve köşesi dolabı montajı",
@@ -435,8 +429,8 @@ export const services: Service[] = [
           "Fiyat, kullanılacak malzemeye ve işçiliğe göre servis kaydına göre teklif edilir.",
       },
     ],
-    topImages: mutfakUst,
-    beforeAfterImages: mutfakAlt,
+    topImages: [...mutfakUstSlayt],
+    beforeAfterImages: [...mutfakOncesiSonrasi],
   },
 ];
 

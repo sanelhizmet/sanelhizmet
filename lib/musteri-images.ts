@@ -1,4 +1,12 @@
-/** Musteri gorselleri - duzenli listeler */
+/**
+ * Otomatik üretildi — elle düzenleme.
+ * Görsel eklemek için ilgili klasöre koyup `npm run sync-images` çalıştır.
+ *
+ * Klasör yapısı:
+ *   public/musteri/<hizmet>/kategori.webp
+ *   public/musteri/<hizmet>/ust-slayt/        → yazı altı slayt
+ *   public/musteri/<hizmet>/oncesi-sonrasi/  → alt slayt
+ */
 
 export const heroSliderImages = [
   "/musteri/hero/s01.webp",
@@ -13,248 +21,233 @@ export const heroSliderImages = [
   "/musteri/hero/s10.webp",
   "/musteri/hero/s11.webp",
   "/musteri/hero/s12.webp",
-];
+] as const;
 
-/** Internet / katalog duşakabin vitrin görselleri (yazı altı slayt) */
-export const dusakabinVitrin = [
-  "/musteri/dusakabin/vitrin/01.webp",
-  "/musteri/dusakabin/vitrin/02.webp",
-  "/musteri/dusakabin/vitrin/03.webp",
-  "/musteri/dusakabin/vitrin/04.webp",
-  "/musteri/dusakabin/vitrin/05.webp",
-  "/musteri/dusakabin/vitrin/06.webp",
-  "/musteri/dusakabin/vitrin/07.webp",
-  "/musteri/dusakabin/vitrin/08.webp",
-  "/musteri/dusakabin/vitrin/09.webp",
-  "/musteri/dusakabin/vitrin/10.webp",
-  "/musteri/dusakabin/vitrin/11.webp",
-  "/musteri/dusakabin/vitrin/12.webp",
-  "/musteri/dusakabin/vitrin/13.webp",
-  "/musteri/dusakabin/vitrin/14.webp",
-  "/musteri/dusakabin/vitrin/15.webp",
-  "/musteri/dusakabin/vitrin/16.webp",
-  "/musteri/dusakabin/vitrin/17.webp",
-  "/musteri/dusakabin/vitrin/18.webp",
-  "/musteri/dusakabin/vitrin/19.webp",
-  "/musteri/dusakabin/vitrin/20.webp",
-  "/musteri/dusakabin/vitrin/21.webp",
-  "/musteri/dusakabin/vitrin/22.webp",
-  "/musteri/dusakabin/vitrin/23.webp",
-  "/musteri/dusakabin/vitrin/24.webp",
-  "/musteri/dusakabin/vitrin/25.webp",
-  "/musteri/dusakabin/vitrin/26.webp",
-  "/musteri/dusakabin/vitrin/27.webp",
-  "/musteri/dusakabin/vitrin/28.webp",
-  "/musteri/dusakabin/vitrin/29.webp",
-  "/musteri/dusakabin/vitrin/30.webp",
-  "/musteri/dusakabin/vitrin/31.webp",
-  "/musteri/dusakabin/vitrin/32.webp",
-  "/musteri/dusakabin/vitrin/33.webp",
-  "/musteri/dusakabin/vitrin/34.webp",
-];
 
-export const dusakabinUst = [
-  "/musteri/dusakabin/ust/01.webp",
-  "/musteri/dusakabin/ust/02.webp",
-  "/musteri/dusakabin/ust/03.webp",
-  "/musteri/dusakabin/ust/04.webp",
-  "/musteri/dusakabin/ust/05.webp",
-  "/musteri/dusakabin/ust/06.webp",
-  "/musteri/dusakabin/ust/07.webp",
-  "/musteri/dusakabin/ust/08.webp",
-  "/musteri/dusakabin/ust/09.webp",
-  "/musteri/dusakabin/ust/10.webp",
-  "/musteri/dusakabin/ust/11.webp",
-  "/musteri/dusakabin/ust/12.webp",
-  "/musteri/dusakabin/ust/13.webp",
-  "/musteri/dusakabin/ust/14.webp",
-  "/musteri/dusakabin/ust/15.webp",
-  "/musteri/dusakabin/ust/16.webp",
-  "/musteri/dusakabin/ust/17.webp",
-  "/musteri/dusakabin/ust/18.webp",
-  "/musteri/dusakabin/ust/19.webp",
-  "/musteri/dusakabin/ust/20.webp",
-  "/musteri/dusakabin/ust/21.webp",
-  "/musteri/dusakabin/ust/22.webp",
-  "/musteri/dusakabin/ust/23.webp",
-  "/musteri/dusakabin/ust/24.webp",
-  "/musteri/dusakabin/ust/25.webp",
-  "/musteri/dusakabin/ust/26.webp",
-  "/musteri/dusakabin/ust/27.webp",
-  "/musteri/dusakabin/ust/28.webp",
-  "/musteri/dusakabin/ust/29.webp",
-  "/musteri/dusakabin/ust/30.webp",
-  "/musteri/dusakabin/ust/31.webp",
-  "/musteri/dusakabin/ust/32.webp",
-  "/musteri/dusakabin/ust/33.webp",
-  "/musteri/dusakabin/ust/34.webp",
-  "/musteri/dusakabin/ust/35.webp",
-  "/musteri/dusakabin/ust/36.webp",
-];
+/** Duşakabin Tamir ve Yenileme */
+export const dusakabinUstSlayt = [
+  "/musteri/dusakabin/ust-slayt/01.webp",
+  "/musteri/dusakabin/ust-slayt/02.webp",
+  "/musteri/dusakabin/ust-slayt/03.webp",
+  "/musteri/dusakabin/ust-slayt/04.webp",
+  "/musteri/dusakabin/ust-slayt/05.webp",
+  "/musteri/dusakabin/ust-slayt/06.webp",
+  "/musteri/dusakabin/ust-slayt/07.webp",
+  "/musteri/dusakabin/ust-slayt/08.webp",
+  "/musteri/dusakabin/ust-slayt/09.webp",
+  "/musteri/dusakabin/ust-slayt/10.webp",
+  "/musteri/dusakabin/ust-slayt/11.webp",
+  "/musteri/dusakabin/ust-slayt/12.webp",
+  "/musteri/dusakabin/ust-slayt/13.webp",
+  "/musteri/dusakabin/ust-slayt/14.webp",
+  "/musteri/dusakabin/ust-slayt/15.webp",
+  "/musteri/dusakabin/ust-slayt/16.webp",
+  "/musteri/dusakabin/ust-slayt/17.webp",
+  "/musteri/dusakabin/ust-slayt/18.webp",
+  "/musteri/dusakabin/ust-slayt/19.webp",
+  "/musteri/dusakabin/ust-slayt/20.webp",
+  "/musteri/dusakabin/ust-slayt/21.webp",
+  "/musteri/dusakabin/ust-slayt/22.webp",
+  "/musteri/dusakabin/ust-slayt/23.webp",
+  "/musteri/dusakabin/ust-slayt/24.webp",
+  "/musteri/dusakabin/ust-slayt/25.webp",
+  "/musteri/dusakabin/ust-slayt/26.webp",
+  "/musteri/dusakabin/ust-slayt/27.webp",
+  "/musteri/dusakabin/ust-slayt/28.webp",
+  "/musteri/dusakabin/ust-slayt/29.webp",
+  "/musteri/dusakabin/ust-slayt/30.webp",
+  "/musteri/dusakabin/ust-slayt/31.webp",
+  "/musteri/dusakabin/ust-slayt/32.webp",
+  "/musteri/dusakabin/ust-slayt/33.webp",
+  "/musteri/dusakabin/ust-slayt/34.webp",
+] as const;
 
-export const dusakabinAlt = [
-  "/musteri/dusakabin/alt/01.webp",
-  "/musteri/dusakabin/alt/02.webp",
-  "/musteri/dusakabin/alt/03.webp",
-  "/musteri/dusakabin/alt/04.webp",
-  "/musteri/dusakabin/alt/05.webp",
-  "/musteri/dusakabin/alt/06.webp",
-  "/musteri/dusakabin/alt/07.webp",
-  "/musteri/dusakabin/alt/08.webp",
-  "/musteri/dusakabin/alt/09.webp",
-  "/musteri/dusakabin/alt/10.webp",
-  "/musteri/dusakabin/alt/11.webp",
-  "/musteri/dusakabin/alt/12.webp",
-  "/musteri/dusakabin/alt/13.webp",
-  "/musteri/dusakabin/alt/14.webp",
-  "/musteri/dusakabin/alt/15.webp",
-  "/musteri/dusakabin/alt/16.webp",
-  "/musteri/dusakabin/alt/17.webp",
-  "/musteri/dusakabin/alt/18.webp",
-  "/musteri/dusakabin/alt/19.webp",
-  "/musteri/dusakabin/alt/20.webp",
-  "/musteri/dusakabin/alt/21.webp",
-  "/musteri/dusakabin/alt/22.webp",
-  "/musteri/dusakabin/alt/23.webp",
-  "/musteri/dusakabin/alt/24.webp",
-  "/musteri/dusakabin/alt/25.webp",
-  "/musteri/dusakabin/alt/26.webp",
-  "/musteri/dusakabin/alt/27.webp",
-];
+export const dusakabinOncesiSonrasi = [
+  "/musteri/dusakabin/oncesi-sonrasi/01.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/02.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/03.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/04.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/05.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/06.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/07.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/08.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/09.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/10.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/11.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/12.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/13.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/14.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/15.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/16.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/17.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/18.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/19.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/20.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/21.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/22.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/23.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/24.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/25.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/26.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/27.webp",
+  "/musteri/dusakabin/oncesi-sonrasi/28.webp",
+] as const;
 
-export const tesisatUst = [
-  "/musteri/tesisat/ust/01.webp",
-  "/musteri/tesisat/ust/02.webp",
-  "/musteri/tesisat/ust/03.webp",
-  "/musteri/tesisat/ust/04.webp",
-  "/musteri/tesisat/ust/05.webp",
-  "/musteri/tesisat/ust/06.webp",
-  "/musteri/tesisat/ust/07.webp",
-];
 
-export const tesisatAlt = [
-  "/musteri/tesisat/alt/01.webp",
-  "/musteri/tesisat/alt/02.webp",
-  "/musteri/tesisat/alt/03.webp",
-  "/musteri/tesisat/alt/04.webp",
-  "/musteri/tesisat/alt/05.webp",
-  "/musteri/tesisat/alt/06.webp",
-  "/musteri/tesisat/alt/07.webp",
-  "/musteri/tesisat/alt/08.webp",
-  "/musteri/tesisat/alt/09.webp",
-  "/musteri/tesisat/alt/10.webp",
-  "/musteri/tesisat/alt/11.webp",
-  "/musteri/tesisat/alt/12.webp",
-];
+/** Sıhhi Tesisat */
+export const tesisatUstSlayt = [
+  "/musteri/tesisat/ust-slayt/01.webp",
+  "/musteri/tesisat/ust-slayt/02.webp",
+  "/musteri/tesisat/ust-slayt/03.webp",
+  "/musteri/tesisat/ust-slayt/04.webp",
+  "/musteri/tesisat/ust-slayt/05.webp",
+  "/musteri/tesisat/ust-slayt/06.webp",
+  "/musteri/tesisat/ust-slayt/07.webp",
+] as const;
 
-export const klozetUst = [
-  "/musteri/klozet/ust/01.webp",
-  "/musteri/klozet/ust/02.webp",
-  "/musteri/klozet/ust/03.webp",
-  "/musteri/klozet/ust/04.webp",
-  "/musteri/klozet/ust/05.webp",
-  "/musteri/klozet/ust/06.webp",
-  "/musteri/klozet/ust/07.webp",
-  "/musteri/klozet/ust/08.webp",
-  "/musteri/klozet/ust/09.webp",
-  "/musteri/klozet/ust/10.webp",
-  "/musteri/klozet/ust/11.webp",
-  "/musteri/klozet/ust/12.webp",
-  "/musteri/klozet/ust/13.webp",
-  "/musteri/klozet/ust/14.webp",
-  "/musteri/klozet/ust/15.webp",
-  "/musteri/klozet/ust/16.webp",
-  "/musteri/klozet/ust/17.webp",
-  "/musteri/klozet/ust/18.webp",
-  "/musteri/klozet/ust/19.webp",
-  "/musteri/klozet/ust/20.webp",
-  "/musteri/klozet/ust/21.webp",
-  "/musteri/klozet/ust/22.webp",
-  "/musteri/klozet/ust/23.webp",
-  "/musteri/klozet/ust/24.webp",
-  "/musteri/klozet/ust/25.webp",
-  "/musteri/klozet/ust/26.webp",
-];
+export const tesisatOncesiSonrasi = [
+  "/musteri/tesisat/oncesi-sonrasi/01.webp",
+  "/musteri/tesisat/oncesi-sonrasi/02.webp",
+  "/musteri/tesisat/oncesi-sonrasi/03.webp",
+  "/musteri/tesisat/oncesi-sonrasi/04.webp",
+  "/musteri/tesisat/oncesi-sonrasi/05.webp",
+  "/musteri/tesisat/oncesi-sonrasi/06.webp",
+  "/musteri/tesisat/oncesi-sonrasi/07.webp",
+  "/musteri/tesisat/oncesi-sonrasi/08.webp",
+  "/musteri/tesisat/oncesi-sonrasi/09.webp",
+  "/musteri/tesisat/oncesi-sonrasi/10.webp",
+  "/musteri/tesisat/oncesi-sonrasi/11.webp",
+  "/musteri/tesisat/oncesi-sonrasi/12.webp",
+] as const;
 
-export const klozetAlt = [
-  "/musteri/klozet/alt/01.webp",
-  "/musteri/klozet/alt/02.webp",
-  "/musteri/klozet/alt/03.webp",
-  "/musteri/klozet/alt/04.webp",
-  "/musteri/klozet/alt/05.webp",
-  "/musteri/klozet/alt/06.webp",
-  "/musteri/klozet/alt/07.webp",
-  "/musteri/klozet/alt/08.webp",
-  "/musteri/klozet/alt/09.webp",
-  "/musteri/klozet/alt/10.webp",
-  "/musteri/klozet/alt/11.webp",
-  "/musteri/klozet/alt/12.webp",
-  "/musteri/klozet/alt/13.webp",
-  "/musteri/klozet/alt/14.webp",
-  "/musteri/klozet/alt/15.webp",
-  "/musteri/klozet/alt/16.webp",
-  "/musteri/klozet/alt/17.webp",
-];
 
-export const muslukUst = [
-  "/musteri/musluk/ust/01.webp",
-  "/musteri/musluk/ust/02.webp",
-  "/musteri/musluk/ust/03.webp",
-  "/musteri/musluk/ust/04.webp",
-  "/musteri/musluk/ust/05.webp",
-  "/musteri/musluk/ust/06.webp",
-  "/musteri/musluk/ust/07.webp",
-  "/musteri/musluk/ust/08.webp",
-  "/musteri/musluk/ust/09.webp",
-];
+/** Rezervuar ve Klozet */
+export const klozetUstSlayt = [
+  "/musteri/klozet/ust-slayt/01.webp",
+  "/musteri/klozet/ust-slayt/02.webp",
+  "/musteri/klozet/ust-slayt/03.webp",
+  "/musteri/klozet/ust-slayt/04.webp",
+  "/musteri/klozet/ust-slayt/05.webp",
+  "/musteri/klozet/ust-slayt/06.webp",
+  "/musteri/klozet/ust-slayt/07.webp",
+  "/musteri/klozet/ust-slayt/08.webp",
+  "/musteri/klozet/ust-slayt/09.webp",
+  "/musteri/klozet/ust-slayt/10.webp",
+] as const;
 
-export const muslukAlt = [
-  "/musteri/musluk/alt/01.webp",
-  "/musteri/musluk/alt/02.webp",
-  "/musteri/musluk/alt/03.webp",
-  "/musteri/musluk/alt/04.webp",
-  "/musteri/musluk/alt/05.webp",
-  "/musteri/musluk/alt/06.webp",
-  "/musteri/musluk/alt/07.webp",
-  "/musteri/musluk/alt/08.webp",
-  "/musteri/musluk/alt/09.webp",
-];
+export const klozetOncesiSonrasi = [
+  "/musteri/klozet/oncesi-sonrasi/01.webp",
+  "/musteri/klozet/oncesi-sonrasi/02.webp",
+  "/musteri/klozet/oncesi-sonrasi/03.webp",
+  "/musteri/klozet/oncesi-sonrasi/04.webp",
+  "/musteri/klozet/oncesi-sonrasi/05.webp",
+  "/musteri/klozet/oncesi-sonrasi/06.webp",
+  "/musteri/klozet/oncesi-sonrasi/07.webp",
+  "/musteri/klozet/oncesi-sonrasi/08.webp",
+  "/musteri/klozet/oncesi-sonrasi/09.webp",
+  "/musteri/klozet/oncesi-sonrasi/10.webp",
+  "/musteri/klozet/oncesi-sonrasi/11.webp",
+  "/musteri/klozet/oncesi-sonrasi/12.webp",
+  "/musteri/klozet/oncesi-sonrasi/13.webp",
+  "/musteri/klozet/oncesi-sonrasi/14.webp",
+  "/musteri/klozet/oncesi-sonrasi/15.webp",
+  "/musteri/klozet/oncesi-sonrasi/16.webp",
+  "/musteri/klozet/oncesi-sonrasi/17.webp",
+  "/musteri/klozet/oncesi-sonrasi/18.webp",
+  "/musteri/klozet/oncesi-sonrasi/19.webp",
+] as const;
 
-export const fayansUst = [
-  "/musteri/fayans/ust/01.webp",
-  "/musteri/fayans/ust/02.webp",
-  "/musteri/fayans/ust/03.webp",
-  "/musteri/fayans/ust/04.webp",
-  "/musteri/fayans/ust/05.webp",
-  "/musteri/fayans/ust/06.webp",
-  "/musteri/fayans/ust/07.webp",
-  "/musteri/fayans/ust/08.webp",
-];
 
-export const fayansAlt = [
-  "/musteri/fayans/alt/01.webp",
-  "/musteri/fayans/alt/02.webp",
-  "/musteri/fayans/alt/03.webp",
-  "/musteri/fayans/alt/04.webp",
-  "/musteri/fayans/alt/05.webp",
-  "/musteri/fayans/alt/06.webp",
-  "/musteri/fayans/alt/07.webp",
-];
+/** Musluk ve Batarya */
+export const muslukUstSlayt = [
+  "/musteri/musluk/ust-slayt/01.webp",
+  "/musteri/musluk/ust-slayt/02.webp",
+  "/musteri/musluk/ust-slayt/03.webp",
+  "/musteri/musluk/ust-slayt/04.webp",
+  "/musteri/musluk/ust-slayt/05.webp",
+  "/musteri/musluk/ust-slayt/06.webp",
+  "/musteri/musluk/ust-slayt/07.webp",
+  "/musteri/musluk/ust-slayt/08.webp",
+  "/musteri/musluk/ust-slayt/09.webp",
+  "/musteri/musluk/ust-slayt/10.webp",
+  "/musteri/musluk/ust-slayt/11.webp",
+  "/musteri/musluk/ust-slayt/12.webp",
+] as const;
 
-export const mutfakUst = [
-  "/musteri/mutfak/ust/01.webp",
-  "/musteri/mutfak/ust/02.webp",
-  "/musteri/mutfak/ust/03.webp",
-  "/musteri/mutfak/ust/04.webp",
-];
+export const muslukOncesiSonrasi = [
+  "/musteri/musluk/oncesi-sonrasi/01.webp",
+  "/musteri/musluk/oncesi-sonrasi/02.webp",
+  "/musteri/musluk/oncesi-sonrasi/03.webp",
+  "/musteri/musluk/oncesi-sonrasi/04.webp",
+  "/musteri/musluk/oncesi-sonrasi/05.webp",
+  "/musteri/musluk/oncesi-sonrasi/06.webp",
+  "/musteri/musluk/oncesi-sonrasi/07.webp",
+  "/musteri/musluk/oncesi-sonrasi/08.webp",
+  "/musteri/musluk/oncesi-sonrasi/09.webp",
+  "/musteri/musluk/oncesi-sonrasi/10.webp",
+  "/musteri/musluk/oncesi-sonrasi/11.webp",
+  "/musteri/musluk/oncesi-sonrasi/12.webp",
+] as const;
 
-export const mutfakAlt = [
-  "/musteri/mutfak/alt/01.webp",
-  "/musteri/mutfak/alt/02.webp",
-  "/musteri/mutfak/alt/03.webp",
-  "/musteri/mutfak/alt/04.webp",
-  "/musteri/mutfak/alt/05.webp",
-  "/musteri/mutfak/alt/06.webp",
-  "/musteri/mutfak/alt/07.webp",
-];
 
+/** Fayans / Seramik */
+export const fayansUstSlayt = [
+  "/musteri/fayans/ust-slayt/01.webp",
+  "/musteri/fayans/ust-slayt/02.webp",
+  "/musteri/fayans/ust-slayt/03.webp",
+  "/musteri/fayans/ust-slayt/04.webp",
+  "/musteri/fayans/ust-slayt/05.webp",
+  "/musteri/fayans/ust-slayt/06.webp",
+  "/musteri/fayans/ust-slayt/07.webp",
+  "/musteri/fayans/ust-slayt/08.webp",
+] as const;
+
+export const fayansOncesiSonrasi = [
+  "/musteri/fayans/oncesi-sonrasi/01.webp",
+  "/musteri/fayans/oncesi-sonrasi/02.webp",
+  "/musteri/fayans/oncesi-sonrasi/03.webp",
+  "/musteri/fayans/oncesi-sonrasi/04.webp",
+  "/musteri/fayans/oncesi-sonrasi/05.webp",
+  "/musteri/fayans/oncesi-sonrasi/06.webp",
+  "/musteri/fayans/oncesi-sonrasi/07.webp",
+] as const;
+
+
+/** Mutfak ve Dolap */
+export const mutfakUstSlayt = [
+  "/musteri/mutfak/ust-slayt/01.webp",
+  "/musteri/mutfak/ust-slayt/02.webp",
+  "/musteri/mutfak/ust-slayt/03.webp",
+  "/musteri/mutfak/ust-slayt/04.webp",
+  "/musteri/mutfak/ust-slayt/05.webp",
+] as const;
+
+export const mutfakOncesiSonrasi = [
+  "/musteri/mutfak/oncesi-sonrasi/01.webp",
+  "/musteri/mutfak/oncesi-sonrasi/02.webp",
+  "/musteri/mutfak/oncesi-sonrasi/03.webp",
+  "/musteri/mutfak/oncesi-sonrasi/04.webp",
+  "/musteri/mutfak/oncesi-sonrasi/05.webp",
+  "/musteri/mutfak/oncesi-sonrasi/06.webp",
+  "/musteri/mutfak/oncesi-sonrasi/07.webp",
+  "/musteri/mutfak/oncesi-sonrasi/08.webp",
+  "/musteri/mutfak/oncesi-sonrasi/09.webp",
+  "/musteri/mutfak/oncesi-sonrasi/10.webp",
+  "/musteri/mutfak/oncesi-sonrasi/11.webp",
+] as const;
+
+
+/** Alias — content.ts */
+export const dusakabinUst = dusakabinUstSlayt;
+export const dusakabinAlt = dusakabinOncesiSonrasi;
+export const tesisatUst = tesisatUstSlayt;
+export const tesisatAlt = tesisatOncesiSonrasi;
+export const klozetUst = klozetUstSlayt;
+export const klozetAlt = klozetOncesiSonrasi;
+export const muslukUst = muslukUstSlayt;
+export const muslukAlt = muslukOncesiSonrasi;
+export const fayansUst = fayansUstSlayt;
+export const fayansAlt = fayansOncesiSonrasi;
+export const mutfakUst = mutfakUstSlayt;
+export const mutfakAlt = mutfakOncesiSonrasi;
+export const dusakabinVitrin = dusakabinUstSlayt;

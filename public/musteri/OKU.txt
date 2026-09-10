@@ -1,0 +1,34 @@
+GÖRSEL KLASÖRLERİ — NASIL KULLANILIR
+=====================================
+
+Her hizmet sayfasının görselleri burada, ayrı klasörlerde:
+
+public/musteri/
+  dusakabin/     → Duşakabin Tamir ve Yenileme
+  tesisat/       → Sıhhi Tesisat
+  klozet/        → Rezervuar ve Klozet
+  musluk/        → Musluk ve Batarya
+  fayans/        → Fayans / Seramik
+  mutfak/        → Mutfak ve Dolap
+
+Her hizmet klasörünün içi:
+
+  kategori.webp       → Ana sayfa kartı + hizmet sayfası üst (tek) görsel
+  ust-slayt/          → Yazının altındaki slayt (ürün / vitrin)
+  oncesi-sonrasi/     → Sayfanın altındaki öncesi-sonrası slayt
+
+ÖRNEK — Duşakabin:
+  public/musteri/dusakabin/kategori.webp
+  public/musteri/dusakabin/ust-slayt/01.webp
+  public/musteri/dusakabin/ust-slayt/02.webp
+  public/musteri/dusakabin/oncesi-sonrasi/01.webp
+  public/musteri/dusakabin/oncesi-sonrasi/02.webp
+
+Görsel ekleme:
+  1) İlgili klasöre .webp / .jpg / .png koy
+  2) Proje klasöründe çalıştır:  npm run sync-images
+  3) Sayfayı yenile
+
+Not:
+  - _arsiv-eski klasörleri sitede görünmez; eski karışık görseller burada.
+  - Dosya adları sıralamayı belirler (01, 02, 03...).

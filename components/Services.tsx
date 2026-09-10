@@ -8,13 +8,9 @@ export default function Services() {
     <section id="hizmetler" className="bg-surface py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="text-3xl font-bold text-foreground md:text-4xl">
             Hizmetlerimiz
           </h2>
-          <p className="mx-auto max-w-xl text-muted">
-            Evinizdeki tamir, montaj ve yenileme işleri için detaylı hizmet
-            sayfalarımıza göz atın.
-          </p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
