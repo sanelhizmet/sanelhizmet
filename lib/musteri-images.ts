@@ -8,7 +8,7 @@
  *   public/musteri/<hizmet>/oncesi-sonrasi/  → alt slayt
  */
 
-export const heroSliderImages = [
+export const heroSliderImages: string[] = [
   "/musteri/hero/s01.webp",
   "/musteri/hero/s02.webp",
   "/musteri/hero/s03.webp",
@@ -21,11 +21,11 @@ export const heroSliderImages = [
   "/musteri/hero/s10.webp",
   "/musteri/hero/s11.webp",
   "/musteri/hero/s12.webp",
-] as const;
+];
 
 
 /** Duşakabin Tamir ve Yenileme */
-export const dusakabinUstSlayt = [
+export const dusakabinUstSlayt: string[] = [
   "/musteri/dusakabin/ust-slayt/01.webp",
   "/musteri/dusakabin/ust-slayt/02.webp",
   "/musteri/dusakabin/ust-slayt/03.webp",
@@ -60,9 +60,9 @@ export const dusakabinUstSlayt = [
   "/musteri/dusakabin/ust-slayt/32.webp",
   "/musteri/dusakabin/ust-slayt/33.webp",
   "/musteri/dusakabin/ust-slayt/34.webp",
-] as const;
+];
 
-export const dusakabinOncesiSonrasi = [
+export const dusakabinOncesiSonrasi: string[] = [
   "/musteri/dusakabin/oncesi-sonrasi/01.webp",
   "/musteri/dusakabin/oncesi-sonrasi/02.webp",
   "/musteri/dusakabin/oncesi-sonrasi/03.webp",
@@ -72,7 +72,6 @@ export const dusakabinOncesiSonrasi = [
   "/musteri/dusakabin/oncesi-sonrasi/07.webp",
   "/musteri/dusakabin/oncesi-sonrasi/08.webp",
   "/musteri/dusakabin/oncesi-sonrasi/09.webp",
-  "/musteri/dusakabin/oncesi-sonrasi/10.webp",
   "/musteri/dusakabin/oncesi-sonrasi/11.webp",
   "/musteri/dusakabin/oncesi-sonrasi/12.webp",
   "/musteri/dusakabin/oncesi-sonrasi/13.webp",
@@ -91,11 +90,12 @@ export const dusakabinOncesiSonrasi = [
   "/musteri/dusakabin/oncesi-sonrasi/26.webp",
   "/musteri/dusakabin/oncesi-sonrasi/27.webp",
   "/musteri/dusakabin/oncesi-sonrasi/28.webp",
-] as const;
+  "/musteri/dusakabin/oncesi-sonrasi/29.webp",
+];
 
 
 /** Sıhhi Tesisat */
-export const tesisatUstSlayt = [
+export const tesisatUstSlayt: string[] = [
   "/musteri/tesisat/ust-slayt/01.webp",
   "/musteri/tesisat/ust-slayt/02.webp",
   "/musteri/tesisat/ust-slayt/03.webp",
@@ -103,9 +103,9 @@ export const tesisatUstSlayt = [
   "/musteri/tesisat/ust-slayt/05.webp",
   "/musteri/tesisat/ust-slayt/06.webp",
   "/musteri/tesisat/ust-slayt/07.webp",
-] as const;
+];
 
-export const tesisatOncesiSonrasi = [
+export const tesisatOncesiSonrasi: string[] = [
   "/musteri/tesisat/oncesi-sonrasi/01.webp",
   "/musteri/tesisat/oncesi-sonrasi/02.webp",
   "/musteri/tesisat/oncesi-sonrasi/03.webp",
@@ -118,11 +118,11 @@ export const tesisatOncesiSonrasi = [
   "/musteri/tesisat/oncesi-sonrasi/10.webp",
   "/musteri/tesisat/oncesi-sonrasi/11.webp",
   "/musteri/tesisat/oncesi-sonrasi/12.webp",
-] as const;
+];
 
 
 /** Rezervuar ve Klozet */
-export const klozetUstSlayt = [
+export const klozetUstSlayt: string[] = [
   "/musteri/klozet/ust-slayt/01.webp",
   "/musteri/klozet/ust-slayt/02.webp",
   "/musteri/klozet/ust-slayt/03.webp",
@@ -133,33 +133,32 @@ export const klozetUstSlayt = [
   "/musteri/klozet/ust-slayt/08.webp",
   "/musteri/klozet/ust-slayt/09.webp",
   "/musteri/klozet/ust-slayt/10.webp",
-] as const;
+  "/musteri/klozet/ust-slayt/12.webp",
+  "/musteri/klozet/ust-slayt/16.webp",
+];
 
-export const klozetOncesiSonrasi = [
+export const klozetOncesiSonrasi: string[] = [
   "/musteri/klozet/oncesi-sonrasi/01.webp",
   "/musteri/klozet/oncesi-sonrasi/02.webp",
   "/musteri/klozet/oncesi-sonrasi/03.webp",
   "/musteri/klozet/oncesi-sonrasi/04.webp",
-  "/musteri/klozet/oncesi-sonrasi/05.webp",
   "/musteri/klozet/oncesi-sonrasi/06.webp",
   "/musteri/klozet/oncesi-sonrasi/07.webp",
   "/musteri/klozet/oncesi-sonrasi/08.webp",
   "/musteri/klozet/oncesi-sonrasi/09.webp",
   "/musteri/klozet/oncesi-sonrasi/10.webp",
   "/musteri/klozet/oncesi-sonrasi/11.webp",
-  "/musteri/klozet/oncesi-sonrasi/12.webp",
   "/musteri/klozet/oncesi-sonrasi/13.webp",
   "/musteri/klozet/oncesi-sonrasi/14.webp",
   "/musteri/klozet/oncesi-sonrasi/15.webp",
-  "/musteri/klozet/oncesi-sonrasi/16.webp",
   "/musteri/klozet/oncesi-sonrasi/17.webp",
   "/musteri/klozet/oncesi-sonrasi/18.webp",
   "/musteri/klozet/oncesi-sonrasi/19.webp",
-] as const;
+];
 
 
 /** Musluk ve Batarya */
-export const muslukUstSlayt = [
+export const muslukUstSlayt: string[] = [
   "/musteri/musluk/ust-slayt/01.webp",
   "/musteri/musluk/ust-slayt/02.webp",
   "/musteri/musluk/ust-slayt/03.webp",
@@ -172,9 +171,10 @@ export const muslukUstSlayt = [
   "/musteri/musluk/ust-slayt/10.webp",
   "/musteri/musluk/ust-slayt/11.webp",
   "/musteri/musluk/ust-slayt/12.webp",
-] as const;
+  "/musteri/musluk/ust-slayt/13.webp",
+];
 
-export const muslukOncesiSonrasi = [
+export const muslukOncesiSonrasi: string[] = [
   "/musteri/musluk/oncesi-sonrasi/01.webp",
   "/musteri/musluk/oncesi-sonrasi/02.webp",
   "/musteri/musluk/oncesi-sonrasi/03.webp",
@@ -186,23 +186,21 @@ export const muslukOncesiSonrasi = [
   "/musteri/musluk/oncesi-sonrasi/09.webp",
   "/musteri/musluk/oncesi-sonrasi/10.webp",
   "/musteri/musluk/oncesi-sonrasi/11.webp",
-  "/musteri/musluk/oncesi-sonrasi/12.webp",
-] as const;
+];
 
 
 /** Fayans / Seramik */
-export const fayansUstSlayt = [
+export const fayansUstSlayt: string[] = [
   "/musteri/fayans/ust-slayt/01.webp",
-  "/musteri/fayans/ust-slayt/02.webp",
   "/musteri/fayans/ust-slayt/03.webp",
   "/musteri/fayans/ust-slayt/04.webp",
   "/musteri/fayans/ust-slayt/05.webp",
   "/musteri/fayans/ust-slayt/06.webp",
   "/musteri/fayans/ust-slayt/07.webp",
   "/musteri/fayans/ust-slayt/08.webp",
-] as const;
+];
 
-export const fayansOncesiSonrasi = [
+export const fayansOncesiSonrasi: string[] = [
   "/musteri/fayans/oncesi-sonrasi/01.webp",
   "/musteri/fayans/oncesi-sonrasi/02.webp",
   "/musteri/fayans/oncesi-sonrasi/03.webp",
@@ -210,20 +208,20 @@ export const fayansOncesiSonrasi = [
   "/musteri/fayans/oncesi-sonrasi/05.webp",
   "/musteri/fayans/oncesi-sonrasi/06.webp",
   "/musteri/fayans/oncesi-sonrasi/07.webp",
-] as const;
+];
 
 
 /** Mutfak ve Dolap */
-export const mutfakUstSlayt = [
+export const mutfakUstSlayt: string[] = [
   "/musteri/mutfak/ust-slayt/01.webp",
   "/musteri/mutfak/ust-slayt/02.webp",
   "/musteri/mutfak/ust-slayt/03.webp",
   "/musteri/mutfak/ust-slayt/04.webp",
   "/musteri/mutfak/ust-slayt/05.webp",
-] as const;
+  "/musteri/mutfak/ust-slayt/14.webp",
+];
 
-export const mutfakOncesiSonrasi = [
-  "/musteri/mutfak/oncesi-sonrasi/01.webp",
+export const mutfakOncesiSonrasi: string[] = [
   "/musteri/mutfak/oncesi-sonrasi/02.webp",
   "/musteri/mutfak/oncesi-sonrasi/03.webp",
   "/musteri/mutfak/oncesi-sonrasi/04.webp",
@@ -234,7 +232,7 @@ export const mutfakOncesiSonrasi = [
   "/musteri/mutfak/oncesi-sonrasi/09.webp",
   "/musteri/mutfak/oncesi-sonrasi/10.webp",
   "/musteri/mutfak/oncesi-sonrasi/11.webp",
-] as const;
+];
 
 
 /** Alias — content.ts */

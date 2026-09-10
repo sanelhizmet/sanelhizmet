@@ -46,9 +46,9 @@ def list_public_paths(folder: Path) -> list[str]:
 
 def fmt_export(name: str, paths: list[str]) -> str:
     if not paths:
-        return f"export const {name} = [] as const;\n"
+        return f"export const {name}: string[] = [];\n"
     body = ",\n".join(f'  "{p}"' for p in paths)
-    return f"export const {name} = [\n{body},\n] as const;\n"
+    return f"export const {name}: string[] = [\n{body},\n];\n"
 
 
 def main() -> None:

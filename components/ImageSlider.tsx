@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type ImageSliderProps = {
-  images: string[];
+  images: readonly string[];
   visible?: number;
   autoPlayMs?: number;
   showDots?: boolean;
