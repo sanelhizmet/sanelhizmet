@@ -1,6 +1,6 @@
 import {
   dusakabinAlt,
-  dusakabinUst,
+  dusakabinVitrin,
   fayansAlt,
   fayansUst,
   heroSliderImages,
@@ -23,17 +23,20 @@ export const siteConfig = {
   heroDescription:
     "Güvenilir ve profesyonel kadromuzla, uygun fiyatlı hizmeti, siz değerli müşterilerimize sunuyoruz.",
   serviceArea: "İstanbul ve çevresi",
+  address:
+    "Fevzi Çakmak Mahallesi, Altın Sk. No:6, 34290 Küçükçekmece/İstanbul",
+  addressShort: "Fevzi Çakmak Mh., Altın Sk. No:6, Küçükçekmece",
 };
 
 export const googleBusiness = {
   placeId: "ChIJ8-UowKyjyhQRnzdBOMmgyGw",
   reviewUrl: "https://g.page/r/CZ83QTjJoMhsEAE/review",
   mapsUrl:
-    "https://www.google.com/maps/place/?q=place_id:ChIJ8-UowKyjyhQRnzdBOMmgyGw",
+    "https://www.google.com/maps/search/?api=1&query=Fevzi+%C3%87akmak+Mahallesi%2C+Alt%C4%B1n+Sk.+No%3A6%2C+34290+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul",
   reviewsUrl:
     "https://search.google.com/local/reviews?placeid=ChIJ8-UowKyjyhQRnzdBOMmgyGw",
   mapsEmbedUrl:
-    "https://maps.google.com/maps?q=%C4%B0stanbul%2C+T%C3%BCrkiye&hl=tr&z=10&output=embed",
+    "https://maps.google.com/maps?q=Fevzi+%C3%87akmak+Mahallesi%2C+Alt%C4%B1n+Sk.+No%3A6%2C+34290+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul&hl=tr&z=17&output=embed",
 };
 
 export const navLinks = [
@@ -64,7 +67,7 @@ export type Service = {
   features: string[];
   steps: ServiceStep[];
   faqs: ServiceFaq[];
-  /** Üst slayt (ürün / ana görseller) */
+  /** Yazı altı vitrin / ürün slaytı */
   topImages: string[];
   /** Alt slayt (öncesi / sonrası / uygulama) */
   beforeAfterImages: string[];
@@ -128,7 +131,7 @@ export const services: Service[] = [
           "Fiyat, kullanılacak malzemeye ve işçiliğe göre keşif sonrası netleşir; sabit paket fiyatı yoktur.",
       },
     ],
-    topImages: dusakabinUst,
+    topImages: dusakabinVitrin,
     beforeAfterImages: dusakabinAlt,
   },
   {
@@ -310,8 +313,8 @@ export const services: Service[] = [
           "Fiyat, kullanılacak malzemeye ve işçiliğe göre netleşir; malzemeli veya sadece işçilik teklifi hazırlanabilir.",
       },
     ],
-    topImages: muslukUst,
-    beforeAfterImages: muslukAlt,
+    topImages: muslukAlt,
+    beforeAfterImages: muslukUst,
   },
   {
     slug: "fayans",
@@ -449,11 +452,11 @@ export const completedWorkImages = heroSliderImages;
 export const aboutContent = {
   whoWeAre: {
     title: "Biz Kimiz",
-    text: "Sanel Hizmet, İstanbul ve çevresinde duşakabin, sıhhi tesisat, klozet–rezervuar, musluk–batarya, fayans ve dolap işlerinde yerinde keşif, uygulama ve montaj sunan bir hizmet ekibidir. Amacımız; her işi temiz işçilikle, söz verilen sürede ve müşteri memnuniyetiyle tamamlamaktır.",
+    text: "Sanel Hizmet olarak kurulduğumuz günden bu yana hizmet sektöründe kalite, güven ve sürdürülebilirlik ilkelerini benimseyerek yolumuza devam ediyoruz. Sektördeki yenilikleri yakından takip eden, dinamik ve alanında uzman kadromuzla müşterilerimizin ihtiyaçlarına değer katan profesyonel çözümler üretiyoruz. Müşteri memnuniyetini her zaman en üst sırada tutarak standartları yükseltmeye ve sektörde fark yaratmaya kararlılıkla devam ediyoruz. Amacımız, ihtiyaçlarınızı en doğru şekilde analiz ederek size en etkili, hızlı ve güvenilir hizmeti uygun fiyatla sunmaktır.",
   },
   aboutUs: {
     title: "Hakkımızda",
-    text: "Banyo ve mutfak tadilatından acil kaçak müdahalesine, tesisat hattı gizlemeden demonte dolap kurulumuna kadar evinizdeki ihtiyaçlara tek noktadan çözüm üretiyoruz. Fiyatlarımızı kullanılan malzemeye ve işçiliğe göre şeffaf şekilde belirliyor; uygun fiyat, dürüst teklif ve kaliteli sonuçla yanınızdayız.",
+    text: "Sanel Hizmet, yaşam alanlarınızın konforunu, güvenliğini ve işlevselliğini korumak amacıyla kurulan profesyonel bir hizmet sağlayıcısıdır. Hizmet sektöründe başarının anahtarının güven ve zamanında teslimat olduğunun bilincindeyiz. Bu doğrultuda, deneyimli ve alanında uzman teknik kadromuzla her projeye aynı titizlik ve profesyonellikle yaklaşıyoruz. Küçük bir musluk tamirinden kapsamlı banyo yenileme ve sıhhi tesisat projelerine kadar, her adımda yüksek kalite standartlarından ödün vermeden çalışıyoruz.",
   },
   contact: {
     title: "İletişim",

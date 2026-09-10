@@ -67,9 +67,8 @@ export default async function ServicePage({ params }: PageProps) {
   const service = getServiceBySlug(slug);
   if (!service) notFound();
 
-  // Kategori kartı sadece ana sayfada; detayda iş görselleri kullanılır
-  const pageHeroImage =
-    service.topImages[0] ?? service.beforeAfterImages[0] ?? service.image;
+  // Üstte tek görsel: ana sayfa kategori kartı (slayt yok)
+  const pageHeroImage = service.image;
   const serviceBrands = brandsByServiceSlug[service.slug] ?? [];
   const serviceJsonLd = buildServiceJsonLd(service);
 
@@ -121,6 +120,7 @@ export default async function ServicePage({ params }: PageProps) {
               ))}
             </div>
 
+            {/* Yazının altında vitrin / ürün slaytı */}
             {service.topImages.length > 0 && (
               <div className="mb-14">
                 <ImageSlider
@@ -182,11 +182,14 @@ export default async function ServicePage({ params }: PageProps) {
 
             {service.beforeAfterImages.length > 0 && (
               <div className="mb-14">
+                <h2 className="mb-5 text-2xl font-bold text-foreground">
+                  Öncesi / Sonrası
+                </h2>
                 <ImageSlider
                   images={service.beforeAfterImages}
                   visible={1}
                   autoPlayMs={4500}
-                  altPrefix={service.title}
+                  altPrefix={`${service.title} öncesi sonrası`}
                   imageClassName="mx-auto aspect-[3/4] w-full max-w-md bg-[#f4f4f5] md:aspect-[4/5] md:max-w-xl"
                   roundedClassName="rounded-2xl"
                   objectFit="contain"

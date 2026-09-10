@@ -39,9 +39,9 @@ export default function AboutContact() {
                 <Phone className="h-4 w-4 text-accent" />
                 {siteConfig.phone}
               </a>
-              <p className="flex items-center gap-2 text-muted">
-                <MapPin className="h-4 w-4 text-accent" />
-                {siteConfig.serviceArea}
+              <p className="flex items-start gap-2 text-muted">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span>{siteConfig.address}</span>
               </p>
             </div>
           </div>

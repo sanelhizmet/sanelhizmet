@@ -126,7 +126,10 @@ export function buildLocalBusinessJsonLd(rating?: {
     sameAs: [googleBusiness.mapsUrl, googleBusiness.reviewsUrl],
     address: {
       "@type": "PostalAddress",
-      addressLocality: "İstanbul",
+      streetAddress: "Fevzi Çakmak Mahallesi, Altın Sk. No:6",
+      addressLocality: "Küçükçekmece",
+      addressRegion: "İstanbul",
+      postalCode: "34290",
       addressCountry: "TR",
     },
     priceRange: "$$",
