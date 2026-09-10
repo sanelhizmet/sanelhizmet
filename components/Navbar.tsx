@@ -35,7 +35,7 @@ export default function Navbar() {
     >
       <nav className="relative z-50 mx-auto flex max-w-6xl items-center justify-between bg-white px-4 py-3 md:px-6 lg:bg-transparent">
         <Link
-          href="/#tanitim"
+          href="/#anasayfa"
           className="flex shrink-0 items-center"
           onClick={() => setMenuOpen(false)}
         >
