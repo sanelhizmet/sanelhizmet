@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Logo from "@/components/Logo";
+import HomeHashLink from "@/components/HomeHashLink";
 import { navLinks } from "@/lib/content";
 
 export default function Navbar() {
@@ -34,23 +34,23 @@ export default function Navbar() {
       }`}
     >
       <nav className="relative z-50 mx-auto flex max-w-6xl items-center justify-between bg-white px-4 py-3 md:px-6 lg:bg-transparent">
-        <Link
-          href="/#anasayfa"
+        <HomeHashLink
+          href="/"
           className="flex shrink-0 items-center"
-          onClick={() => setMenuOpen(false)}
+          onNavigate={() => setMenuOpen(false)}
         >
           <Logo showWordmark />
-        </Link>
+        </HomeHashLink>
 
         <ul className="hidden items-center gap-7 lg:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <HomeHashLink
                 href={link.href}
                 className="text-sm text-muted transition-colors hover:text-accent"
               >
                 {link.label}
-              </a>
+              </HomeHashLink>
             </li>
           ))}
         </ul>
@@ -71,13 +71,13 @@ export default function Navbar() {
           <ul className="flex flex-col gap-1 bg-white px-4 py-6">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <HomeHashLink
                   href={link.href}
-                  onClick={() => setMenuOpen(false)}
+                  onNavigate={() => setMenuOpen(false)}
                   className="block rounded-lg px-4 py-3 text-lg text-foreground transition-colors hover:bg-surface hover:text-accent"
                 >
                   {link.label}
-                </a>
+                </HomeHashLink>
               </li>
             ))}
           </ul>

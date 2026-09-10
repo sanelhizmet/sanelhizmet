@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Logo from "@/components/Logo";
+import HomeHashLink from "@/components/HomeHashLink";
 import { aboutContent, navLinks, siteConfig } from "@/lib/content";
 
 export default function Footer() {
@@ -20,24 +20,24 @@ export default function Footer() {
             <p className="mb-3 text-sm font-semibold text-foreground">
               {aboutContent.whoWeAre.title}
             </p>
-            <a
+            <HomeHashLink
               href="/#biz-kimiz"
               className="text-sm text-muted transition-colors hover:text-accent"
             >
               Biz kimiz?
-            </a>
+            </HomeHashLink>
           </div>
 
           <div>
             <p className="mb-3 text-sm font-semibold text-foreground">
               {aboutContent.aboutUs.title}
             </p>
-            <a
+            <HomeHashLink
               href="/#hakkimizda"
               className="text-sm text-muted transition-colors hover:text-accent"
             >
               Hakkımızda
-            </a>
+            </HomeHashLink>
           </div>
 
           <div>
@@ -45,9 +45,9 @@ export default function Footer() {
               {aboutContent.contact.title}
             </p>
             <div className="flex flex-col gap-2 text-sm text-muted">
-              <a href="/#iletisim" className="hover:text-accent">
+              <HomeHashLink href="/#iletisim" className="hover:text-accent">
                 İletişim bilgileri
-              </a>
+              </HomeHashLink>
               <a
                 href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
                 className="hover:text-accent"
@@ -60,13 +60,13 @@ export default function Footer() {
 
         <div className="mb-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-surface-light pt-6">
           {navLinks.map((link) => (
-            <Link
+            <HomeHashLink
               key={link.href}
               href={link.href}
               className="text-xs text-muted transition-colors hover:text-accent"
             >
               {link.label}
-            </Link>
+            </HomeHashLink>
           ))}
         </div>
 

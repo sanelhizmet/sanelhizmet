@@ -40,7 +40,7 @@ export const googleBusiness = {
 };
 
 export const navLinks = [
-  { label: "Ana Sayfa", href: "/#anasayfa" },
+  { label: "Ana Sayfa", href: "/" },
   { label: "Hizmetler", href: "/#hizmetler" },
   { label: "Yorumlar", href: "/#yorumlar" },
   { label: "Hakkımızda", href: "/#hakkimizda" },
