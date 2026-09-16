@@ -43,6 +43,7 @@ export const navLinks = [
   { label: "Ana Sayfa", href: "/" },
   { label: "Hizmetler", href: "/#hizmetler" },
   { label: "Yorumlar", href: "/#yorumlar" },
+  { label: "SSS", href: "/sss" },
   { label: "Hakkımızda", href: "/#hakkimizda" },
   { label: "İletişim", href: "/#iletisim" },
 ];
