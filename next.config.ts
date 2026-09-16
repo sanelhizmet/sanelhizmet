@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const isDevelopment = process.env.NODE_ENV === "development";
+
 const securityHeaders = [
   {
     key: "X-DNS-Prefetch-Control",
@@ -42,7 +44,9 @@ const securityHeaders = [
       "object-src 'none'",
       "frame-ancestors 'self'",
       "form-action 'self' https://wa.me https://api.whatsapp.com",
-      "script-src 'self' 'unsafe-inline'",
+      // React, geliştirme modunda hata izlerini göstermek için eval kullanır.
+      // Canlı sitede bu izin verilmez.
+      `script-src 'self' 'unsafe-inline'${isDevelopment ? " 'unsafe-eval'" : ""}`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https:",
       "font-src 'self' data:",

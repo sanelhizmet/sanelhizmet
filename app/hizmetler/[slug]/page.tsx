@@ -87,6 +87,7 @@ export default async function ServicePage({ params }: PageProps) {
             fill
             className="object-cover object-center"
             priority
+            unoptimized={process.env.NODE_ENV === "development"}
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20" />
@@ -130,7 +131,7 @@ export default async function ServicePage({ params }: PageProps) {
                   visible={1}
                   autoPlayMs={4000}
                   altPrefix={`${service.title} görsel`}
-                  imageClassName="mx-auto aspect-[3/4] w-full max-w-md bg-[#f4f4f5] md:aspect-[4/5] md:max-w-xl"
+                  imageClassName="mx-auto aspect-[3/4] w-full max-w-none bg-[#f4f4f5] md:aspect-[4/5] md:max-w-xl"
                   roundedClassName="rounded-2xl"
                   objectFit="contain"
                 />
@@ -189,7 +190,7 @@ export default async function ServicePage({ params }: PageProps) {
                   visible={1}
                   autoPlayMs={4500}
                   altPrefix={service.title}
-                  imageClassName="mx-auto aspect-[3/4] w-full max-w-md bg-[#f4f4f5] md:aspect-[4/5] md:max-w-xl"
+                  imageClassName="mx-auto aspect-[3/4] w-full max-w-none bg-[#f4f4f5] md:aspect-[4/5] md:max-w-xl"
                   roundedClassName="rounded-2xl"
                   objectFit="contain"
                 />

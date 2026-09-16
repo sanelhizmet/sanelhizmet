@@ -10,7 +10,7 @@ export default function CompletedWorks() {
           visible={1}
           autoPlayMs={4500}
           altPrefix="Tamamlanan iş"
-          imageClassName="mx-auto aspect-[3/4] w-full max-w-md bg-[#f4f4f5] md:aspect-[4/5] md:max-w-2xl"
+          imageClassName="mx-auto aspect-[3/4] w-full max-w-none bg-[#f4f4f5] md:aspect-[4/5] md:max-w-2xl"
           roundedClassName="rounded-2xl"
           objectFit="contain"
         />

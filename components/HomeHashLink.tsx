@@ -30,11 +30,16 @@ export default function HomeHashLink({
     const hash = url.hash.replace(/^#/, "");
     const cleanUrl = hash ? `/#${hash}` : "/";
 
-    // Her zaman path'i / yapıp tek hash bırak
+    // Hizmet detay gibi başka path'teyse tam sayfa geçişi
+    if (window.location.pathname !== "/") {
+      window.location.assign(cleanUrl);
+      return;
+    }
+
+    // Ana sayfadayken URL'yi tek hash ile temizle
     window.history.pushState(null, "", cleanUrl);
 
     if (hash) {
-      // Layout/paint sonrası scroll
       requestAnimationFrame(() => {
         document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" });
       });

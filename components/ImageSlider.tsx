@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type ImageSliderProps = {
   images: readonly string[];
@@ -58,17 +57,7 @@ export default function ImageSlider({
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="flex items-center gap-2 md:gap-3">
-        <button
-          type="button"
-          onClick={() => goTo(index - 1)}
-          aria-label="Önceki"
-          className="relative z-20 flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-surface-light bg-background text-foreground shadow-sm transition hover:border-accent hover:text-accent md:h-12 md:w-12"
-        >
-          <ChevronLeft className="pointer-events-none h-5 w-5 md:h-6 md:w-6" />
-        </button>
-
-        <div className="min-w-0 flex-1 overflow-hidden">
+      <div className="min-w-0 overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-out"
             style={{
@@ -78,7 +67,7 @@ export default function ImageSlider({
             {images.map((src, i) => (
               <div
                 key={`${src}-${i}`}
-                className="box-border shrink-0 grow-0 px-1.5 md:px-2"
+                className="box-border shrink-0 grow-0 md:px-2"
                 style={{ width: `${100 / visible}%` }}
               >
                 <div
@@ -105,16 +94,6 @@ export default function ImageSlider({
               </div>
             ))}
           </div>
-        </div>
-
-        <button
-          type="button"
-          onClick={() => goTo(index + 1)}
-          aria-label="Sonraki"
-          className="relative z-20 flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-surface-light bg-background text-foreground shadow-sm transition hover:border-accent hover:text-accent md:h-12 md:w-12"
-        >
-          <ChevronRight className="pointer-events-none h-5 w-5 md:h-6 md:w-6" />
-        </button>
       </div>
 
       {(showDots || showCounter) && (

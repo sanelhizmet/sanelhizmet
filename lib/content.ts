@@ -62,8 +62,10 @@ export type Service = {
   title: string;
   shortDescription: string;
   description: string;
-  /** Ana sayfa kategori kartı görseli */
+  /** Hizmet detay sayfasındaki üst banner görseli */
   image: string;
+  /** Ana sayfadaki hizmet kartı görseli */
+  cardImage: string;
   features: string[];
   steps: ServiceStep[];
   faqs: ServiceFaq[];
@@ -80,6 +82,7 @@ export const services: Service[] = [
     shortDescription: "Duşakabin montajı, tamiratı ve yenileme",
     description: "",
     image: "/musteri/dusakabin/kategori.webp",
+    cardImage: "/musteri/dusakabin/kart.webp",
     features: [
       "Müşteri isteğine göre ölçü, renk ve tasarımına göre duşakabini seçiyoruz",
       "Yapay zeka araçları kullanarak görseller oluşturuyoruz",
@@ -139,6 +142,7 @@ export const services: Service[] = [
     shortDescription: "Su tesisatı montaj ve tamiri",
     description: "",
     image: "/musteri/tesisat/kategori.webp",
+    cardImage: "/musteri/tesisat/kart.webp",
     features: [
       "Yeni mutfak tesisat hattı çekme ve yenileme",
       "Yeni banyo tesisat hattı çekme ve yenileme",
@@ -196,6 +200,7 @@ export const services: Service[] = [
     shortDescription: "Klozet, rezervuar ve sifon montajı / tamiri",
     description: "",
     image: "/musteri/klozet/kategori.webp",
+    cardImage: "/musteri/klozet/kart.webp",
     features: [
       "Klozet montajı yapılır",
       "Klozetlerin su kaçırma ve su almama arızaları giderilir",
@@ -258,6 +263,7 @@ export const services: Service[] = [
     shortDescription: "Musluk ve batarya montajı, değişimi ve tamiri",
     description: "",
     image: "/musteri/musluk/kategori.webp",
+    cardImage: "/musteri/musluk/kart.webp",
     features: [
       "Banyo lavabo bataryası değişimi, montajı ve tamiri",
       "Banyo ve mutfak flex hortum değişimi",
@@ -318,6 +324,7 @@ export const services: Service[] = [
     shortDescription: "Fayans / seramik tadilatı, yenileme ve döşeme",
     description: "",
     image: "/musteri/fayans/kategori.webp",
+    cardImage: "/musteri/fayans/kart.webp",
     features: [
       "Banyo tadilatı fayansı",
       "Mutfak zemin fayansı",
@@ -380,6 +387,7 @@ export const services: Service[] = [
     shortDescription: "Tüm dolap işleri — kurulum ve tamir",
     description: "",
     image: "/musteri/mutfak/kategori.webp",
+    cardImage: "/musteri/mutfak/kart.webp",
     features: [
       "Banyo, mutfak, çalışma masası, kiler, ayakkabılık, vestiyer ve kahve köşesi dolabı montajı",
       "Dolap kapak yenileme ve tamiri",

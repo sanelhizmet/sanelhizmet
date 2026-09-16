@@ -19,7 +19,7 @@ export default function Hero() {
           visible={1}
           autoPlayMs={4000}
           altPrefix="Sanel Hizmet"
-          imageClassName="mx-auto aspect-[4/5] w-full max-w-md bg-[#f4f4f5] md:aspect-[16/10] md:max-w-4xl"
+          imageClassName="mx-auto aspect-[4/5] w-full max-w-none bg-[#f4f4f5] md:aspect-[16/10] md:max-w-4xl"
           roundedClassName="rounded-2xl"
           objectFit="contain"
         />

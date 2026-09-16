@@ -21,7 +21,7 @@ export default function Services() {
               className="group relative block min-h-[260px] overflow-hidden rounded-2xl border border-surface-light shadow-sm transition-all hover:border-accent/40 hover:shadow-lg"
             >
               <Image
-                src={service.image}
+                src={service.cardImage}
                 alt={service.title}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
