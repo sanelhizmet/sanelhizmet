@@ -2,7 +2,7 @@ import { googleBusiness, siteConfig, type Service } from "@/lib/content";
 
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://sanelhizmet.com";
+  "https://www.sanelhizmet.com";
 
 export const seoConfig = {
   title: `${siteConfig.name} | ${siteConfig.tagline} | İstanbul`,
