@@ -53,8 +53,10 @@ export const metadata: Metadata = {
   },
   verification: {
     // Search Console > Ayarlar > Sahiplik doğrulama > HTML etiketi
-    // .env içine GOOGLE_SITE_VERIFICATION=xxxxx yazın
-    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+    // Ortam değişkeni varsa onu kullan; yoksa mevcut URL mülkü doğrulama kodu.
+    google:
+      process.env.GOOGLE_SITE_VERIFICATION ||
+      "5HqMYHCA3DI5rQUyQATiBNl52tOrJ6X1CbM_u2DuGR8",
   },
 };
 
