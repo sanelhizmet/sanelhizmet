@@ -103,6 +103,7 @@ export const tesisatUstSlayt: string[] = [
   "/musteri/tesisat/ust-slayt/05.webp",
   "/musteri/tesisat/ust-slayt/06.webp",
   "/musteri/tesisat/ust-slayt/07.webp",
+  "/musteri/tesisat/ust-slayt/08.webp",
 ];
 
 export const tesisatOncesiSonrasi: string[] = [
@@ -192,8 +193,6 @@ export const muslukOncesiSonrasi: string[] = [
 /** Fayans / Seramik */
 export const fayansUstSlayt: string[] = [
   "/musteri/fayans/ust-slayt/01.webp",
-  "/musteri/fayans/ust-slayt/03.webp",
-  "/musteri/fayans/ust-slayt/04.webp",
   "/musteri/fayans/ust-slayt/05.webp",
   "/musteri/fayans/ust-slayt/06.webp",
   "/musteri/fayans/ust-slayt/07.webp",
@@ -218,7 +217,9 @@ export const mutfakUstSlayt: string[] = [
   "/musteri/mutfak/ust-slayt/03.webp",
   "/musteri/mutfak/ust-slayt/04.webp",
   "/musteri/mutfak/ust-slayt/05.webp",
-  "/musteri/mutfak/ust-slayt/14.webp",
+  "/musteri/mutfak/ust-slayt/06.webp",
+  "/musteri/mutfak/ust-slayt/08.webp",
+  "/musteri/mutfak/ust-slayt/7.webp",
 ];
 
 export const mutfakOncesiSonrasi: string[] = [
